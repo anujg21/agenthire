@@ -20,7 +20,6 @@
       --bg:        #030712;
       --bg2:       #0a1020;
       --bg3:       #0f1a2e;
-      --surface:   rgba(255,255,255,0.035);
       --border:    rgba(255,255,255,0.07);
       --border2:   rgba(255,255,255,0.13);
       --text:      #f1f5f9;
@@ -31,7 +30,6 @@
       --cyan:      #22d3ee;
       --green:     #10b981;
       --amber:     #f59e0b;
-      --red:       #f87171;
       --glow:      rgba(99,102,241,0.4);
     }
 
@@ -312,37 +310,6 @@
       border-color: rgba(255,255,255,0.22);
       transform: translateY(-2px);
     }
-
-    .hero-social {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .avatars { display: flex; }
-
-    .avatars span {
-      width: 30px; height: 30px;
-      border-radius: 50%;
-      border: 2px solid var(--bg);
-      margin-left: -9px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10px;
-      font-weight: 700;
-      font-family: 'Space Grotesk', sans-serif;
-    }
-
-    .avatars span:first-child { margin-left: 0; }
-    .a1 { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
-    .a2 { background: linear-gradient(135deg, #06b6d4, #6366f1); }
-    .a3 { background: linear-gradient(135deg, #10b981, #06b6d4); }
-    .a4 { background: linear-gradient(135deg, #f59e0b, #10b981); }
-    .a5 { background: linear-gradient(135deg, #f43f5e, #f59e0b); }
 
     /* ─── TERMINAL ─── */
     .hero-terminal {
@@ -778,15 +745,9 @@
     }
 
     .agent-foot {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       padding-top: 20px;
       border-top: 1px solid var(--border);
     }
-
-    .agent-rate { font-size: 13px; color: var(--muted); }
-    .agent-rate strong { font-family: 'Space Grotesk', sans-serif; font-size: 18px; color: var(--text); }
 
     .btn-hire {
       background: rgba(99,102,241,0.1);
@@ -818,89 +779,6 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 16px;
-    }
-
-    /* ─── AMPLIFY / FORCE MULTIPLIER ─── */
-    .amplify {
-      padding: 80px 0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .amplify::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(34,211,238,0.04) 50%, rgba(16,185,129,0.04) 100%);
-    }
-
-    .amplify-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      padding: 0 28px;
-    }
-
-    .amplify h2 {
-      font-size: clamp(28px, 4vw, 50px);
-      font-weight: 800;
-      letter-spacing: -2px;
-      line-height: 1.15;
-      margin-bottom: 18px;
-    }
-
-    .amplify > .amplify-inner > p {
-      font-size: 17px;
-      color: var(--muted);
-      line-height: 1.75;
-      max-width: 620px;
-      margin: 0 auto 48px;
-    }
-
-    .amplify-flow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0;
-      flex-wrap: wrap;
-    }
-
-    .flow-node {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      padding: 22px 28px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--border2);
-      border-radius: 16px;
-      min-width: 180px;
-    }
-
-    .flow-node .ico {
-      font-size: 30px;
-      margin-bottom: 2px;
-    }
-
-    .flow-node strong {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .flow-node span {
-      font-size: 12px;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .flow-arrow {
-      font-size: 22px;
-      color: var(--border2);
-      padding: 0 8px;
-      flex-shrink: 0;
     }
 
     /* ─── COMPARISON ─── */
@@ -974,32 +852,6 @@
     .col-ot { justify-content: center; font-size: 13px !important; }
 
     .ico-ok { color: var(--green); font-size: 17px; margin-right: 4px; }
-    .ico-no { color: var(--muted); font-size: 17px; margin-right: 4px; opacity: 0.5; }
-
-    /* ─── USE CASES ─── */
-    .uc-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 56px;
-    }
-
-    .uc-card {
-      padding: 28px;
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      transition: border-color 0.3s, transform 0.3s;
-    }
-
-    .uc-card:hover {
-      border-color: rgba(99,102,241,0.3);
-      transform: translateY(-3px);
-    }
-
-    .uc-icon { font-size: 28px; margin-bottom: 14px; }
-    .uc-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 9px; letter-spacing: -0.3px; }
-    .uc-card p { font-size: 13px; color: var(--muted); line-height: 1.68; }
 
     /* ─── FAQ ─── */
     .faq-wrap { max-width: 740px; margin: 52px auto 0; }
@@ -1064,28 +916,6 @@
     .waitlist { background: var(--bg2); }
 
     .waitlist-inner { max-width: 600px; margin: 0 auto; text-align: center; }
-
-    .live-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(16,185,129,0.08);
-      border: 1px solid rgba(16,185,129,0.2);
-      color: var(--green);
-      padding: 8px 18px;
-      border-radius: 100px;
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 28px;
-    }
-
-    .live-badge span {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--green);
-      box-shadow: 0 0 8px var(--green);
-      animation: pulse-dot 2s infinite;
-    }
 
     .wl-form {
       margin-top: 42px;
@@ -1224,8 +1054,7 @@
 
     .foot-bottom p { font-size: 13px; color: var(--muted); }
 
-    /* ─── GSAP animation marker classes — no visual styles here, GSAP owns the state ─── */
-    .gs-up, .gs-left, .gs-right, .gs-fade { will-change: opacity, transform; }
+    .gs-up, .gs-left, .gs-right { will-change: opacity, transform; }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 960px) {
@@ -1233,7 +1062,6 @@
       .steps { grid-template-columns: 1fr; }
       .steps::before { display: none; }
       .agents-grid { grid-template-columns: 1fr; }
-      .uc-grid { grid-template-columns: 1fr 1fr; }
       .foot-top { flex-direction: column; }
     }
 
@@ -1242,12 +1070,9 @@
       .nav-links { display: none; }
       .container { padding: 0 18px; }
       .section-pad { padding: 80px 0; }
-      .uc-grid { grid-template-columns: 1fr; }
       .row2 { grid-template-columns: 1fr; }
       .compare-head, .compare-row { grid-template-columns: 1.2fr 1fr 1fr; }
       .compare-head div, .compare-row div { padding: 14px 14px; font-size: 12px !important; }
-      .amplify-flow { gap: 8px; }
-      .flow-arrow { display: none; }
     }
   </style>
 </head>
@@ -1303,17 +1128,6 @@
         Browse Agents
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-    </div>
-
-    <div class="hero-social gs-up">
-      <div class="avatars">
-        <span class="a1">AN</span>
-        <span class="a2">RK</span>
-        <span class="a3">MS</span>
-        <span class="a4">JP</span>
-        <span class="a5">TL</span>
-      </div>
-      <span>Join <strong>engineering leaders</strong> already on the waitlist</span>
     </div>
 
     <div class="hero-terminal gs-up">
@@ -1448,7 +1262,7 @@
         <h2 class="section-h" style="margin-bottom:8px">Meet your new specialist team members</h2>
         <p class="section-p">Each agent is a deep specialist in its domain. They work alongside your engineers, not around them.</p>
       </div>
-      <a href="#waitlist" class="btn-ghost" style="white-space:nowrap">See full roster →</a>
+      <a href="#waitlist" class="btn-ghost" style="white-space:nowrap">Get Early Access →</a>
     </div>
 
     <div class="agents-grid">
@@ -1550,42 +1364,6 @@
   </div>
 </section>
 
-<!-- ─── AMPLIFY: Force Multiplier Messaging ─── -->
-<section class="amplify" id="amplify">
-  <div class="amplify-inner">
-    <div class="gs-up">
-      <span class="chip" style="justify-content:center">The Philosophy</span>
-      <h2>
-        Your engineers own the mission.<br />
-        <span class="grad-text">Agents multiply what they can do.</span>
-      </h2>
-      <p>
-        The best engineering organizations aren't the ones with the most headcount — they're the ones with the highest leverage. AgentHire agents handle the high-volume execution work your team directs, so your senior engineers can stay in the strategic and creative space where they create the most value. Human expertise leads. Agents scale it.
-      </p>
-    </div>
-
-    <div class="amplify-flow gs-up" style="transition-delay:0.12s">
-      <div class="flow-node">
-        <div class="ico">🧠</div>
-        <strong>Your engineers</strong>
-        <span>Set strategy, own decisions, define the standards</span>
-      </div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-node">
-        <div class="ico">⬡</div>
-        <strong>AgentHire agents</strong>
-        <span>Execute at scale, following your team's direction</span>
-      </div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-node">
-        <div class="ico">📈</div>
-        <strong>Your team ships more</strong>
-        <span>Without burning out the people you can't afford to lose</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ─── COMPARISON ─── -->
 <section class="section-pad" id="compare" style="background:var(--bg2)">
   <div class="container">
@@ -1617,62 +1395,9 @@
         <div class="col-ot">Senior engineers get pulled away from deep work</div>
       </div>
       <div class="compare-row">
-        <div>Scaling for peak projects or launches</div>
-        <div class="col-us"><span class="ico-ok">✓</span> Flex capacity on demand</div>
-        <div class="col-ot">Bottlenecked by fixed team size</div>
-      </div>
-      <div class="compare-row">
         <div>Maintaining domain coverage when engineers move on</div>
         <div class="col-us"><span class="ico-ok">✓</span> Consistent expertise, no knowledge gaps</div>
         <div class="col-ot">Institutional knowledge leaves with the person</div>
-      </div>
-      <div class="compare-row">
-        <div>After-hours monitoring &amp; response</div>
-        <div class="col-us"><span class="ico-ok">✓</span> Always-on, agents escalate to humans when needed</div>
-        <div class="col-ot">Alert fatigue and burnout risk</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── USE CASES ─── -->
-<section class="section-pad" id="usecases">
-  <div class="container">
-    <div class="gs-up">
-      <span class="chip">Use Cases</span>
-      <h2 class="section-h">Built for how engineering<br />teams actually work</h2>
-    </div>
-
-    <div class="uc-grid">
-      <div class="uc-card gs-up" style="transition-delay:0.04s">
-        <div class="uc-icon">🚨</div>
-        <h3>Production Incident Response</h3>
-        <p>An SRE agent joins your on-call rotation, handles first response to alerts, and pages your engineers only when a human call is needed — with full context already loaded.</p>
-      </div>
-      <div class="uc-card gs-up" style="transition-delay:0.08s">
-        <div class="uc-icon">🌍</div>
-        <h3>Cloud Migration Projects</h3>
-        <p>Assign a CloudOps agent to own migration execution under your architect's guidance — from Terraform modules to cut-over runbooks — without pulling your entire team into implementation details.</p>
-      </div>
-      <div class="uc-card gs-up" style="transition-delay:0.12s">
-        <div class="uc-icon">🏢</div>
-        <h3>Platform Modernization</h3>
-        <p>A Platform Architect agent helps your leads document current-state architecture, evaluate options, and produce ADRs — keeping modernization work moving while your team ships features.</p>
-      </div>
-      <div class="uc-card gs-up" style="transition-delay:0.16s">
-        <div class="uc-icon">🛠️</div>
-        <h3>Internal Developer Platforms</h3>
-        <p>A Platform Engineering agent builds and maintains the self-service infrastructure your product teams depend on, directed by your platform leads and following your golden-path standards.</p>
-      </div>
-      <div class="uc-card gs-up" style="transition-delay:0.2s">
-        <div class="uc-icon">📈</div>
-        <h3>Launch &amp; Scale Moments</h3>
-        <p>Product launch, viral spike, end-of-quarter push — augment your team with cloud agents instantly for the surge. Scale back down just as fast when it's done.</p>
-      </div>
-      <div class="uc-card gs-up" style="transition-delay:0.24s">
-        <div class="uc-icon">🔍</div>
-        <h3>Continuous Compliance Monitoring</h3>
-        <p>An SRE agent continuously audits infrastructure against your compliance controls, surfaces drift before it becomes a finding, and drafts the remediation runbooks for your team to review.</p>
       </div>
     </div>
   </div>
@@ -1719,11 +1444,6 @@
 <section class="waitlist section-pad" id="waitlist">
   <div class="container">
     <div class="waitlist-inner gs-up">
-      <div class="live-badge">
-        <span></span>
-        Engineering leaders already joining the waitlist
-      </div>
-
       <span class="chip" style="justify-content:center">Early Access</span>
       <h2 class="section-h">Be the first to give your team<br />this kind of leverage</h2>
       <p class="section-p" style="margin:16px auto 0">
@@ -1792,25 +1512,8 @@
             <li><a href="#how">How It Works</a></li>
             <li><a href="#agents">Browse Agents</a></li>
             <li><a href="#compare">Why AgentHire</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#waitlist">Early Access</a></li>
-          </ul>
-        </div>
-        <div class="foot-col">
-          <h4>Agents</h4>
-          <ul>
-            <li><a href="#agents">SRE Agent</a></li>
-            <li><a href="#agents">CloudOps Agent</a></li>
-            <li><a href="#agents">Platform Architect</a></li>
-            <li><a href="#agents">Platform Engineering</a></li>
-          </ul>
-        </div>
-        <div class="foot-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
           </ul>
         </div>
       </div>
@@ -2005,17 +1708,6 @@ window.addEventListener('load', () => {
       ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 86%' },
     });
-  });
-
-  /* Amplify flow nodes stagger */
-  gsap.from('.flow-node', {
-    opacity: 0,
-    y: 24,
-    scale: 0.94,
-    duration: 0.65,
-    stagger: 0.14,
-    ease: 'back.out(1.4)',
-    scrollTrigger: { trigger: '.amplify-flow', start: 'top 85%' },
   });
 
   /* Compare rows slide in */
